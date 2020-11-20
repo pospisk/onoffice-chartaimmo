@@ -2,10 +2,49 @@ header{
     position: relative;
 }
 
+footer{
+    background-color: #F2F2F2;
+    padding-top: 72px;
+    @media (min-width: 992px){
+        padding-top: 120px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
 section{
     min-height: 600px;
+    overflow: hidden;
     @media (min-width: 992px){
         min-height: 504px;
+    }
+}
+
+input{
+    background-color: #FFFFFFD1;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #A2A2A2;
+    padding: 6px 13px;
+    margin-bottom: 1em;
+    
+    &::placeholder{
+        color: #1D1D1D;
+        opacity: 1;
+    }
+}
+
+textarea{
+    width: 100%;
+    padding: 6px 13px;
+    border: 1px solid #A2A2A2;
+    margin-bottom: 1em;
+    
+    &::placeholder{
+        color: #1D1D1D;
+        opacity: 1;
     }
 }
 
@@ -18,4 +57,22 @@ select{
     background-position: 96% center; /*Positioning*/
     background-repeat: no-repeat; /*Prevent showing multiple background images*/
     background-size: 16px;
+    background-color: #FFFFFFD1;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #A2A2A2;
+    padding: 6px 13px;
+    margin-bottom: 1em;
+    
+    &::placeholder{
+        color: #1D1D1D;
+        opacity: 1;
+    }
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
 }
