@@ -1,0 +1,21 @@
+header{
+    position: relative;
+}
+
+section{
+    min-height: 600px;
+    @media (min-width: 992px){
+        min-height: 504px;
+    }
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearence: none;
+    position: relative;
+    background-image: url("./../img/caret.svg");
+    background-position: 96% center; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-size: 16px;
+}
