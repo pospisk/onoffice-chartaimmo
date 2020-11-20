@@ -1,9 +1,33 @@
 <template>
   <div id="app">
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "RealEstateAgent",
+        "name": "ChartaImmo",
+        "url": "charta-immo.dev",
+        "logo": "https://charta-immo.dev/assets/img/logo.svg",
+        "description": "ChartaImmo – das ist ein Unternehmen mit Tradition und Weitsicht. Unser Familienbetrieb, vermittelt seit fast 15 Jahren Menschen in Immobilien. Unter der Leitung von Geschäftsführer Max Mustermann vermitteln wir nicht nur Bestandsimmobilien, sondern entwickeln und setzen auch Wohnprojekte in der Region Musterhause und Umgebung um.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Musterstraße 123",
+          "addressLocality": "Musterhausen",
+          "addressRegion": "NRW",
+          "postalCode": "12345",
+          "addressCountry": "Germany"
+        },
+        "openingHours": "Mo, Tu, We, Th, Fr 08:00-17:00",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "0123-123456-0",
+          "contactType": "Business"
+        }
+      }
+    </script>
     <Header />
     <section class="hero__wrapper">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="slide-right"  data-aos-delay="0">
           <div class="col-12">
             <div class="hero__title">
               Wir haben Ihre <br>
@@ -12,7 +36,7 @@
           </div>
         </div>
         <form>
-          <div class="row">
+          <div class="row" data-aos="slide-up" data-aos-delay="100">
             <div class="col-12 col-lg-3">
               <input placeholder="Ort">
             </div>
@@ -31,7 +55,7 @@
               <input placeholder="Preis bis">
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="slide-up">
             <div class="col-12 d-flex justify-content-end">
               <button class="hero__button button--outline">
                 Suchen
@@ -41,7 +65,7 @@
         </form>
       </div>
     </section>
-    <section class="pd__section">
+    <section class="pd__section" data-aos="fade-in"  data-aos-delay="200">
       <div class="container">
         <div class="row">
           <div class="col-12 offset-0 col-lg-8 offset-lg-2">
@@ -61,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="bg--gray pd__section">
+    <section class="pd__section bg--gray" data-aos="fade-in">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -74,26 +98,26 @@
               </h1>
             </div>
             <div class="row">
-              <Realestate/>
-              <Realestate/>
-              <Realestate/>
-              <Realestate/>
-              <Realestate/>
-              <Realestate/>
+              <Realestate data-aos="slide-up"/>
+              <Realestate data-aos="slide-up" data-aos-delay="50"/>
+              <Realestate data-aos="slide-up" data-aos-delay="100"/>
+              <Realestate data-aos="slide-up" data-aos-delay="150"/>
+              <Realestate data-aos="slide-up" data-aos-delay="200"/>
+              <Realestate data-aos="slide-up" data-aos-delay="250"/>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg--dark pd__section">
+    <section class="pd__section bg--dark">
       <div class="container">
         <div class="row offset__lg--y--enlarge">
-          <div class="col-12 col-lg-7">
+          <div class="col-12 col-lg-7" data-aos="slide-right">
             <img class="img-fluid boxshadow" src="./assets/img/douglas-sheppard-9rYfG8sWRVo-unsplash.png" alt="">
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-8 offset-0 offset-lg-4 bg--dark">
+          <div class="col-12 col-lg-8 offset-0 offset-lg-4 bg--dark" data-aos="slide-left">
             <div class="row">
               <div class="col-12 col-lg-11 offset-0 offset-lg-1 my-5">
                 <div class="headline__title">
@@ -125,7 +149,7 @@
         </div>
       </div>
     </section>
-    <section class="pd__section">
+    <section class="pd__section" data-aos="fade-in">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-8 offset-0 offset-lg-2">
@@ -154,13 +178,13 @@
       </div>
 
     </section>
-    <section class="bg--darkgray pd__section">
+    <section class="pd__section bg--darkgray">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0" data-aos="slide-right">
             <img class="img-fluid boxshadow" src="./assets/img/stephan-bechert-yFV39g6AZ5o-unsplash.png" alt="">
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6" data-aos="slide-left">
             <div class="row">
               <div class="col-12 col-lg-10 offset-0 offset-lg-1">
                 <div class="headline__title mb-lg-5">

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header data-aos="slide-down">
         <b-navbar toggleable="lg" type="">
             <div class="container">
                 <b-navbar-brand to="/">
